@@ -3,9 +3,9 @@ import(
 	"github.com/jinzhu/gorm"
 	"github.com/KP-11092000/BookStore/pkg/config"
 )
-var db *gorm.db
+var db *gorm.DB
 type Book struct{
-	gorm.model
+	gorm.Model
 	Name string `gorm:""json:"name`
 	Author string `json:"author"`
 	Publication string `json:"publication"`
@@ -26,7 +26,7 @@ func GetAllBooks() []Book{
 	db.Find(&Books)
 	return Books
 }
-func GetBookById(Id int64)(*Book,*gnorm.DB){
+func GetBookById(Id int64)(*Book,*gorm.DB){
 	var getBook Book
 	db:=db.Where("ID=?",Id).Find(&getBook)
 	return &getBook,db
