@@ -1,8 +1,8 @@
 package models
-import{
+import(
 	"github.com/jinzhu/gorm"
-	"github.com/KP-11092000/BOOKSTORE/pkg/config"
-}
+	"github.com/KP-11092000/BookStore/pkg/config"
+)
 var db *gorm.db
 type Book struct{
 	gorm.model

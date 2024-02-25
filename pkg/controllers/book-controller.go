@@ -1,13 +1,13 @@
 package controllers
-import{
+import(
 	"encoding/json"
 	"fmt"
 	"github.com/gorilla/mux"
 	"net/http"
 	"strconv"
-	"github.com/KP-1109200/BOOKSTORE/pkg/utils"
-	"github.com/KP-1109200/BOOKSTORE/pkg/models"
-}
+	"github.com/KP-1109200/BookStore/pkg/utils"
+	"github.com/KP-1109200/BookStore/pkg/models"
+)
 
 var NewBook models.Book
 

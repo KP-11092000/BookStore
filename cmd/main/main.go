@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"github.com/gorilla/mux"
 	"github.com/jinzhu/gorm/dialects/mysql"
-	"github.com/KP-11092000/Bookstore/pkg/routers"
+	"github.com/KP-11092000/BookStore/pkg/routers"
 )
 func main(){
 	r:= mux.NewRouter()
